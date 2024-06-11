@@ -8,13 +8,10 @@ const Router = require("./Routes/Index");
 const ServerApp = express();
 
 // This line of code allow us to  connect with mongoDB database  { }
-//hg  mongodb+srv://hightech:123HIJP99@cluster0.bkueuua.mongodb.net 
-// gd  mongodb+srv://geralhightech:NyGgET8LY31LQVnG@cluster0.5te8dnr.mongodb.net/
-
 
 const DatabaseConnect  =  async()=>{
-    moongose.connect("mongodb+srv://geralhightech:NyGgET8LY31LQVnG@cluster0.5te8dnr.mongodb.net", 
-    {useNewUrlParser:true}); //  NyGgET8LY31LQVnG    NyGgET8LY31LQVnG
+    moongose.connect("mongodb+srv://hightech:123HIJP99@cluster0.bkueuua.mongodb.net", 
+    {useNewUrlParser:true});
     const Database = moongose.connection;
     try {
         Database.on("error", (error)=>{
@@ -32,7 +29,7 @@ DatabaseConnect();
 // allow request  methods on express server
 
 ServerApp.use( function(req, res, next){ 
-   res.setHeader("Access-Control-Allow-Origin", "https://goldpets.vercel.app"); // This will allow our frontend to have access to the APIS 
+   res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); // This will allow our frontend to have access to the APIS 
    res.setHeader("Access-Control-Allow-Methods", "GET", "POST", "PUT", "PATCH", "DELETE");  // Allow commom action  methods 
    res.setHeader("Access-Control-Allow-Headers", "X-Request-With,content-type");
    res.setHeader("Access-Control-Allow-Credentials", true);

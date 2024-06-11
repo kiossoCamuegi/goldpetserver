@@ -6,10 +6,10 @@ POST http://localhost:6500/htmarketregisternewproduct
 content-type: application/json
 
 {
-    "name": "Ração para Cão Adulto Médio", 
-    "price":"103.00€",
-    "oldprice":null, 
-    "description":"Alimento de gama alta especialmente indicado para cachorros (entre 3 semanas e 2 meses) e para fêmeas gestantes ou lactantes que contém",
+    "name": "Curva tubo-rosca macho para tubo de alumínio", 
+    "price":"12.57€",
+    "oldprice":"38.77€", 
+    "description":"A gama Infinity desenvolvida e produzida integralmente pela Aignep, nasce nos anos 2000, para responder às exigências de mercado, sempre crescente e visando o desenvolvimento de sistemas de distribuição de ar tecnológicos e modernos como alternativa às redes de ar de aço galvanizado ou tubos plásticos colados ou soldados. A escolha passa pelo desejo de propor uma tecnologia única, como sistema de Engate Rápido, para todos os diâmetros.. Através deste sistema, foi possível eliminar a necessidade de equipamentos e ferramentas específicas e de alto custo na montagem das redes. Os tubos e conexões metálicas asseguram a robustez e a alta performance da rede de ar.",
     "category":"665f09d7895b0ecccf8ef0b9", 
     "subcategorie":"",
     "code":0,  
@@ -22,8 +22,8 @@ POST http://localhost:6500/htmarketuploadimages
 content-type: application/json
 
 {
-    "name": "https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw33f27055/images/zu/496/4966821-frente.png?sw=280&sh=280", 
-    "code":"66683aab16f8c24c34db7469" 
+    "name": "https://www.htmarkt.hightech-airer.pt/wp-content/uploads/2020/05/curvaroscamacho.png", 
+    "code":"666313f5ede9091bc7f2df60" 
 } 
 
 
