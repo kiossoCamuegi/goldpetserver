@@ -10,7 +10,7 @@ const ServerApp = express();
 // This line of code allow us to  connect with mongoDB database  { }
 
 const DatabaseConnect  =  async()=>{
-    moongose.connect("mongodb+srv://hightech:123HIJP99@cluster0.bkueuua.mongodb.net", 
+    moongose.connect("mongodb+srv://geralhightech:NyGgET8LY31LQVnG@cluster0.5te8dnr.mongodb.net", 
     {useNewUrlParser:true});
     const Database = moongose.connection;
     try {
