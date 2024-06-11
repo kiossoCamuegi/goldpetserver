@@ -1,0 +1,46 @@
+###
+GET http://localhost:6500/htmarketgetallproducts
+
+###
+POST http://localhost:6500/htmarketregisternewproduct
+content-type: application/json
+
+{
+    "name": "Ração para Cão Adulto Médio", 
+    "price":"103.00€",
+    "oldprice":null, 
+    "description":"Alimento de gama alta especialmente indicado para cachorros (entre 3 semanas e 2 meses) e para fêmeas gestantes ou lactantes que contém",
+    "category":"665f09d7895b0ecccf8ef0b9", 
+    "subcategorie":"",
+    "code":0,  
+    "stockamount":10
+} 
+
+
+###
+POST http://localhost:6500/htmarketuploadimages
+content-type: application/json
+
+{
+    "name": "https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw33f27055/images/zu/496/4966821-frente.png?sw=280&sh=280", 
+    "code":"66683aab16f8c24c34db7469" 
+} 
+
+
+###
+POST http://localhost:6500/htmarketregisternewcategorie
+content-type: application/json
+
+{
+    "name": "Equipamentos"
+} 
+
+
+###
+POST http://localhost:6500/htmarketregisternewsubcategorie
+content-type: application/json
+
+{
+    "name": " ", 
+    "categorie":"665f0a59895b0ecccf8ef0bd"
+} 
